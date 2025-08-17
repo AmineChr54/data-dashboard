@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 from pathlib import Path
 
-def plot_line(df: pd.DataFrame, x_axis: str, y_axis: str):
+def plot_line(df: pd.DataFrame, x_axis: str, y_axis: str) -> px.line:
     # prepare data for a continuous line
     df_plot = df[[x_axis, y_axis]].dropna()
 
@@ -32,7 +32,7 @@ def plot_line(df: pd.DataFrame, x_axis: str, y_axis: str):
 
     return fig
 
-def select_dataset():
+def select_dataset() -> pd.DataFrame:
     # uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
     data_folder = Path(__file__).parent.parent / "data"
     if not data_folder.exists():
