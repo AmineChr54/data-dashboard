@@ -1,0 +1,58 @@
+# .gitignore for Python virtual environment and common libraries
+# Ignore virtual environment
+.venv/
+venv/
+ENV/
+
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore data files
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.h5
+*.db
+*.sqlite
+
+# Ignore logs
+*.log
+
+# Ignore environment variables
+.env
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore pip wheel files
+*.whl
+
+# Ignore test coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Ignore mypy
+.mypy_cache/
+.dmypy.json
+
+# Ignore pytest
+.pytest_cache/
+
+# Ignore other common folders
+build/
+dist/
+*.egg-info/
+
+# Ignore VS Code settings
+.vscode/
